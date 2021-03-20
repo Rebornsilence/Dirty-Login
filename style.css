@@ -1,0 +1,128 @@
+@font-face {
+    font-family: dense;
+    src: url(dense.otf);
+  }
+
+*{
+    font-family: Raleway, sans-serif;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #161515;
+}
+
+#header {
+    position: absolute;
+    top: -22px;
+    left: 35px;
+    height: 20px;
+    width: 100%;
+    margin: -10px;
+    
+}
+
+.box1 {
+    position: absolute;
+    box-sizing: border-box;
+    background: #121212;
+    width: 500px;
+    padding: 24px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    border-top: 45px solid #005613;
+}
+
+
+.box1 input[type="text"], .box1 input[type="password"] {
+    outline: 0;
+    border: 0;
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0px;
+    border-radius: 6px;
+    display: inline-block;
+    box-sizing: border-box;
+    color: black;
+    transition: 0.25s;
+}
+
+
+.box1 input[type="submit"] {
+    border: 0;
+    outline: 0;
+    margin: 8px 0;
+    padding: 10px 5px;
+    width: 100%;
+    background: #059725;
+    color: white;
+    border-radius: 1px;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
+
+
+
+.box1 p {
+    color: white;
+}
+
+label {
+    color: white;
+}
+
+#behind {
+    position: absolute;
+    width: 650px;
+    background: #333333;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px 8px;
+    height: 500px;
+    border-radius: 4px;
+    border: #005613 solid 1px;
+}
+
+#schweinzu {
+    position: absolute;
+    display: none;
+    top: 16%;
+    left: 60%;
+    transform: translate(-16%, -60%);
+}
+
+#schwein {
+    position: absolute;
+    top: 16%;
+    left: 60%;
+    transform: translate(-16%, -60%);
+}
+
+#behind #dirty {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    top: 3%;
+    left: 23%;
+    transform: translate(-3%, -23%);
+}
+
+#credits {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: rgba(207, 207, 207, 0.719);
+}
+
+@media screen and (max-width: 768px) {
+    .box1 {
+        width: 350px;
+    }
+}

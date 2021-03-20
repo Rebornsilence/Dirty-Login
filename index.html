@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+    <title>Dirty Gaming - Login Recode</title>
+</head>
+<body>
+    <div id="behind">
+        <p id="Dirty"><b>Dirty</b>Gaming</p>
+        <img src="schwein.png" alt="schwein" id="schwein">
+        <img src="schweinzu.png" alt="schwein" id="schweinzu">
+    <form class="box1">
+        <p id="header">Login</p>
+        <label for="username">Email-Adresse / Benutzername</label>
+        <input type="text" name="username" placeholder="Email-Adresse / Benutzername eingeben">
+        <label for="pw">Passwort</label>
+        <input type="password" name="pw" id="pw" placeholder="Passwort eingeben">
+        <input type="submit" name="submit" value="Anmelden"> 
+    </form>
+</div> 
+<div id="credits"><p>Recode by https://github.com/Rebornsilence</p></div> 
+
+        <script>
+
+            document.getElementById("pw").addEventListener("focus", function() {
+                document.getElementById("schwein").style.display = "none";
+                document.getElementById("schweinzu").style.display = "flex";
+            })
+
+
+
+            document.getElementById("pw").addEventListener("blur", function() {
+                document.getElementById("schwein").style.display = "flex";
+                document.getElementById("schweinzu").style.display = "none";
+            })
+        </script>
+
+</body>
+</html>
